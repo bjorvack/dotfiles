@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 eval "$(starship init zsh)"
+eval "$(brew shellenv)"
 
 alias ssh-hcl001='ssh root@com-hclpapi001.srv.combell-ops.net'
 alias ssh-migration-be04='ssh bvanacker@tb-be04-hclmigrationapi001.srv.teamblue-ops.net'
@@ -20,6 +21,7 @@ alias update-js-spec='curl -s "http://0.0.0.0:8001/api/docs.json" | jq . --inden
 ## Vim
 alias vim='nvim'
 export EDITOR=nvim
+export XDEBUG_MODE=coverage 
 
 ## Git
 alias g='git'
