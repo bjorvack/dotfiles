@@ -2,6 +2,9 @@
 eval "$(starship init zsh)"
 eval "$(brew shellenv)"
 
+# Fix search history
+bindkey '^R' history-incremental-search-backward
+
 alias ssh-hcl001='ssh root@com-hclpapi001.srv.combell-ops.net'
 alias ssh-migration-be04='ssh bvanacker@tb-be04-hclmigrationapi001.srv.teamblue-ops.net'
 
